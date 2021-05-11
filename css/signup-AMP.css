@@ -1,0 +1,603 @@
+
+* {
+	margin:0;
+	padding:0; 
+}
+
+html,
+body {
+	height:100%;
+	width: 100%;
+}
+
+body {
+	position:relative;
+	background: #0F0F0F url(../images/AMP-bkgd-header.png) no-repeat top center;
+}
+
+#body_div {
+	height: auto!important;
+	margin:0 auto;
+	width: 1024px;
+
+	height:100%
+	position:relative;
+}
+
+#topdiv
+{
+	position: relative;
+	height:100px;
+	background: #0F0F0F url(../images/AMP-bkgd-header.png) no-repeat top center;
+}
+	
+#page_content_div {
+	width:960px;
+	min-height:650px;
+	margin-left:32px;
+}
+
+#signin_div {
+    display:inline-block;
+    width: 874px;
+	margin-left:43px;
+
+/*	margin:auto;
+
+	padding-left: 5px;
+	padding-right: 5px;
+*/
+}
+
+#bld_img {
+	margin-top:5px;
+	margin-left:5px;
+}
+
+#label_motocastad {
+	display:block;
+	width:420px;
+}
+
+#signin_motocast_img {
+	margin-bottom:25px;
+}
+
+#label_motocast_id_title {
+	margin-bottom:25px;
+}
+
+#btm_left_motocast_div, #btm_left_selfcare_div {
+    width:350px;
+	margin-top:70px;
+    float:left;
+    display:inline;
+}
+
+#mbt_scroll_right_div
+{
+    float:left;
+    display: none;
+    margin-top: 0px; 
+    margin-left: 0px;
+    /*background: gray;*/
+    z-index: 3000;
+    -webkit-box-shadow: -3px 4px 7px rgba(0, 0, 0, 1);
+    -webkit-border-radius: 2px;
+}
+
+#mob_scroll_right
+{
+    color: black;
+    padding: 18px;
+}
+
+#td_motocast_img, #td_motoblur_img {
+    display:block;
+
+	margin-top:35px;
+	margin-left:-25px;
+}
+
+#motocast_img_container {
+	filter:Alpha(Opacity=100);
+	height:300px;
+}
+
+#old_browser_img_div {
+    display:block;
+	height:266px;
+	
+	margin-top:35px;
+	/*margin-left:-25px;*/
+
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale,src=images/motocast-art.png);
+}
+
+#btm_right_div {
+	width:270px;
+    margin-top:80px;
+
+    padding-right:40px;
+    padding-left:40px;
+	padding-top:25px;
+	padding-bottom:30px;
+
+    float:right;
+	background-color:white;
+
+	border-style:solid;
+	border-width:1px;
+	border-color:#ccc;
+        margin-bottom: 111px;
+	
+	-moz-border-radius-topright: 4px;
+	-moz-border-radius-topleft: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-top-left-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+}
+
+#brd_img {
+	margin-bottom:15px;
+	margin-right:10px;
+	vertical-align: middle;
+}
+
+#label_signin {
+	padding-top:15px;
+	position:absolute;
+ 	white-space: nowrap;
+}
+
+#password {
+	margin-bottom: 12px;
+	width: 260px;	/* removed 10 px as the left and right padding adds up 10 px more in width*/
+}
+
+#username {
+	margin-bottom: 15px;
+	width: 260px;
+}
+
+#checkbox {
+	margin-top: 25px;
+	margin-bottom: 30px;
+}
+
+#label_keepmesignedin {
+	margin-top:1px;
+	margin-left:7px;
+	position:absolute;
+}
+
+
+hr {
+    width:100%;
+	color:#ccc;
+	margin-left:0px;
+	background-color:#ccc;	/* for IE */
+	noshade="noshade";
+	height:1px;	/* 'Opera' needs height property set for hr styles.*/
+	border:none;
+
+}
+
+#div_create_id{
+	margin-bottom:100px;
+}
+
+#lbl_div {
+	margin-top:20px;
+}
+#button_signin {
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+
+#anchor_forgetpass {
+	display: block;
+}
+
+input.google_button {
+	padding-left: 45px;
+	background-image:url("../images/btn-google-2.png");
+	background-position: 10px 6px;
+	background-repeat: no-repeat;
+}
+
+.google_button:hover {
+	cursor:pointer;
+}
+
+
+#button_signin_google {
+
+	margin-top: 20px;
+	margin-bottom: 30px;
+	/*margin-left: 0px;
+	margin-right: 35px;*/
+}
+
+#signin_err_div
+{
+	margin-bottom: 15px;
+}
+
+
+#signin_err_img {
+	margin-right: 5px;
+	padding-top: 10px;
+	padding-bottom: 12px;
+}
+
+
+ /* create new motocast id screen (signup div)*/
+ 
+#signup_div{
+    padding-top:90px;
+    margin-left:200px;
+    margin-bottom: 70px;
+}
+
+#signin_account_div {
+    padding-top:90px;
+    margin-left:200px;
+    margin-bottom: 70px;
+}
+
+#new_acc_confirmation_div{
+    padding-top:150px;
+    margin-left:200px;
+}
+
+#verify_div{ 
+    padding-top: 120px;
+}
+
+#nac_header_div {
+	margin-bottom:0px;
+}
+
+#signup_header_div{
+	margin-bottom:1px;
+}
+
+#signin_header_div, #signup_google_header_div {
+    margin-bottom:30px;
+}
+
+#nac_header_text_div, #signup_google_header_text_div {
+	display:inline;
+	margin-top:10px;
+	margin-left:0px;
+	position:absolute;
+	margin-bottom:5px;
+	
+}
+
+#signup_header_text_div{
+	display:inline;
+	margin-top:10px;
+	margin-left:0px;
+	position:absolute;
+	margin-bottom:0.1cm;
+	
+}
+
+#line_stle_div{
+	margin-top:1px;
+}
+
+
+#signin_header_text_div, #nac_header_text_div {
+    display:inline;
+    margin-top:10px;
+    margin-left:0px;
+    position:absolute;
+}
+
+#google-btn-blk {
+	padding-top:15px;
+}
+
+#signup-google-btn-blk {
+    padding-top:40px;
+    margin-left:115px;
+    width:550px;
+}
+
+#button_signup_google {
+	display:block; 
+	margin-bottom:40px; 
+	margin-top:5px;
+}
+
+#signup_with_google {
+	display:block; 
+}
+
+#google_signup_cancel {
+	float:right;
+	margin-top:5px;
+}
+
+#button_signup_google_screen {
+    margin-top:5px;
+    margin-right: 250px;
+}
+
+#signup_err_img {
+	padding-left:5px; 
+	padding-right:5px;
+}
+
+#label_signup_err_text {
+	width:500px;
+}
+
+#label_signin_fillin {
+	display: block;
+	margin-bottom: 20px;
+}
+
+#lbl_create_id {
+	display:block; 
+	margin-bottom:20px;
+}
+
+#signup_name, #signup_email, #signup_pwd, #signup_cfpwd {
+	width:285px;
+}
+
+#signup_name_div, #signup_email_div, #signup_pwd_div, #signup_cfpwd_div {
+	margin-top:15px;
+}
+
+#signin_email_div {
+    margin-bottom:15px;
+}
+
+#signin_pwd_div {
+    margin-bottom:40px;
+}
+
+#signup_email, #signup_pwd, #lable_email_help, #lable_npwd_help{
+	display:inline;
+}
+
+#lable_email_help, #lable_npwd_help {
+	margin-left:5px;
+}
+
+#div_err_email, #div_err_npwd, #div_err_cfpwd, #div_err_uname {
+	margin-top:8px;
+}
+
+
+#_bcreateacc, #_bcancel {
+	margin-top:20px;
+}
+
+#_bcancel {
+	margin-left: 5px;
+}
+
+#nac_body_div {
+    margin-top:40px;
+}
+
+#nac_msg1 {
+	display:block; 
+	margin-bottom:30px;
+}
+
+#nac_email_id {
+	display:block; 
+	margin-bottom:25px;
+	
+	overflow:hidden; 
+	text-overflow:ellipsis; 
+	max-width:500px;
+}
+
+#nac_msg2 {
+	display:block; 
+	margin-bottom:40px;
+        padding-right: 220px;
+}
+
+#lbl_title1, #lbl_title2 {
+	margin-bottom: 20px;
+}
+
+#lbl_title3 {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+#lbl_title4{
+	padding-bottom: 10px;
+}
+
+#forgot_dialog_motoid {
+	width:278px;
+}
+
+#label_forgot_dialog_text3 {
+	font-size:13px;
+}
+
+#cea_email_address {
+	width:278px;
+}
+
+#button_vr_ok, #alert_ok {
+    float:right
+}
+
+ #button_cancel_reset, #button_reset_pwd, #button_cea_save, #button_cea_cancel {
+    float:right;
+	margin-left:10px;
+}
+
+#user_consent_button_cancel {
+	float:right;
+	margin-right: 10px;
+}
+
+#user_consent_button_agree {
+	float:right;
+	margin-left:10px;
+}
+
+#lbl_user_consent_title2 {
+	margin-top: 10px;
+	margin-bottom: 80px;	
+}
+
+#forgot_pwd_sub_div {
+	margin-top: 8px;
+}
+
+#label_pwd_change_success {
+	color: green;
+}
+
+
+#devider_div {
+	/*display:inline-block;*/
+	height:400px;
+	width:188px;
+	margin-top:70px;
+	position:absolute;
+}
+
+.vertical_devider_top {
+	margin-left:187px;
+	width:1px;
+	height:20px;
+	background-image:url('/images/divider-vertical-top.png');
+	background-repeat:no-repeat;
+}
+
+.vertical_devider_center {
+	margin-left:187px;
+	width:1px;
+	height:inherit;
+	background-image:url('/images/divider-vertical-center.png');
+	background-repeat:repeat-y;
+}
+
+.vertical_devider_bottom {
+	margin-left:187px;
+	width:1px;
+	height:20px;
+	background-image:url('/images/divider-vertical-bottom.png');
+	background-repeat:no-repeat;
+}
+
+#verify_inner_div {
+/*	position:absolute;*/
+	display:inline-block;
+    width: 485px;
+    margin-left:200px;
+    padding-bottom:50px;
+}
+
+#varify-txt-blk1 {
+    margin-top: 30px;
+}
+
+#varify-txt-blk2, #varify-txt-blk3 {
+    margin-top: 25px;
+}
+
+
+#line_style { 
+    display: block;
+    margin-top: 0.1cm;
+    margin-bottom: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: initial;
+    border-width: 1px;
+    color: #EAEAEA;
+    
+} 
+#verify_mailID {
+	overflow:hidden; 
+	text-overflow:ellipsis; 
+	max-width:265px; 
+	display:block;
+	padding-left:2px;
+}
+
+#verify-code-blk {
+    margin-top: 40px;
+}
+
+#varify-txt-blk4 {
+	margin-top: 25px;
+}
+
+#btn-blk {
+	margin-top:30px;
+}
+
+#verify_err_text, #cea_sub_div {
+	margin-top:8px;
+}
+
+
+.browserIE #change_email_Shadow_IE{
+    display:block;
+	position:absolute;
+	z-index:2; /*Positioning shadow under content*/
+	top:4px;
+	left:19px;
+	right:-24px;
+	bottom:20px;
+          
+	filter:progid:DXImageTransform.Microsoft.Blur(pixelradius=3);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Blur(pixelradius=3)";
+
+            /*Setting blur size of shadow in IE*/
+	background:#444;/*Setting shadow's color */
+}
+
+#signup_tandc_div {
+	padding-top: 40px;
+	padding-right: 230px;
+}
+
+#signup_google_tandc_div {
+	padding-top: 150px;
+    padding-right: 230px;
+}
+
+#signup_google_mid_div {
+    padding-top: 40px;
+    padding-right: 230px;
+}
+
+/*
+input[type=button]:hover {
+        background-color: #0000FF;
+}
+*/
+
+#signup_google_div {
+    padding-top: 90px;
+    margin-left: 100px;
+}
+
+/* Fix the alignemnt of the sign-up name field. This is not the
+   most elegant fix, but it minimizes the code change. */
+#signup_name {
+    margin-left: -2px;
+}
+

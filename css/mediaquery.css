@@ -1,0 +1,257 @@
+@media only screen and (max-device-width:960px) {
+	html,body {
+		background: #FFF;
+		/* margin-top: 1% !important; */
+		/* margin-bottom: 1% !important; */
+		width: 100% !important;
+		height: 100% !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		/* max-width: 720px !important; */
+		box-sizing: border-box !important;
+		/* overflow-x: hidden !important; */
+		/* position: fixed; */
+		min-width: 100% !important;
+	}
+	.hline-text {
+		position: absolute;
+		font-size: 100%;
+		color: #888888;
+		background: #ffffff;
+		/* right: 50%; */
+		line-height: 100% !important;
+		right: 50% !important;
+		padding: 0 1%;
+		right: 50% !important;
+	}
+	#label_forgot_dialog_email {
+		font-size: 140%;
+		line-height: 170%;
+	}
+	.footerInner {
+		background-color: #FFF;
+		width: 100% !important;
+		margin: 1% 0 1% 0 !important;
+		padding: 2% 0 2% 0 !important;
+	}
+	.sso .sso-container {
+		font-family: 'Open Sans', Arial, serif;
+		font-weight: 300;
+		color: #215a6d;
+		border: 0px solid red;
+		padding: 0;
+		margin: 0;
+		margin-left: 1% !important;
+		width: 96% !important;
+		margin-left: 3% !important;
+		/* overflow-x: hidden !important; */
+		/* max-width:60% !important; */
+		/* min-height: 800px; */
+		/* height: 90% !important; */
+		float: none !important;
+	}
+	.wrapNoPreloader {
+		width: 100% !important;
+		overflow-x: hidden !important;
+		margin: 0 auto;
+		margin-bottom: 2% !important;
+	}
+	#utility-nav {
+		width: 100% !important;
+	}
+	.sso p.lead {
+		font-family: inherit;
+		margin: 2% 0 5% 0;
+		font-size: 190% !important;
+		line-height: 70%;
+		color: #215a6d;
+	}
+	.body-copy1 {
+		font-family: 'Open Sans', Arial, serif;
+		font-size: 130% !important;
+		color: #215a6d;
+		font-weight: lighter;
+		line-height: 130% !important;
+	}
+	.sso input[type=text],.sso input[type=password],.uneditable-input {
+		width: 60% !important;
+		line-height: 100%;
+		font-size: 170% !important;
+		min-width: 40% !important;
+		height: 15% important;
+	}
+	.sso p {
+		font-family: inherit;
+		font-size: 160% !important;
+		margin: 0 0 3%;
+		line-height: 145%;
+		color: #215a6d;
+		text-overflow: ellipsis !important;
+	}
+	.sso h2 {
+		font-weight: 300;
+		font-size: 220%;
+	}
+	.body-copy2 {
+		font-family: 'Open Sans', Arial, serif;
+		font-size: 105% !important;
+		color: #215a6d;
+		font-weight: bold;
+	}
+	.body-copy3 {
+		font-family: 'Open Sans', Arial, serif;
+		color: #215a6d;
+		font-size: 120% !important;
+		font-weight: lighter;
+	}
+	.body-copy4 {
+		font-family: 'Open Sans', Arial, serif;
+		color: #8f8f8f;
+		font-size: 120% !important;
+		font-weight: lighter;
+		line-height: 120% !important;
+	}
+	.body-copy5 {
+		color: #215a6d;
+		font-size: 150% !important;
+		font-weight: lighter;
+		line-height: 120% !important;
+	}
+	.body-copy6 {
+		display: inline;
+		float: left;
+		color: #215a6d;
+		font-size: 150% !important;
+		font-weight: normal;
+		line-height: 120% !important;
+		/*  margin-right: 11% !important; */
+		margin-right: 30% !important
+	}
+	.sso .sso-right-column {
+		font-family: inherit;
+		display: block;
+		border: 0px solid black;
+		width: 90%;
+		float: none !important;
+		text-align: left !important;
+	}
+	.sso .sso-left-column {
+		width: 95% !important;
+		padding-top: 2% !important;
+	}
+	.sso .sso-note-spacer_forgotpwd {
+		font-size: 135% !important;
+		padding-left: 0% !important;
+	}
+	#footer {
+		clear: both !important;
+		width: 100% !important;
+		min-width: 100% !important;
+	}
+	.links-small {
+		font-size: 115% !important;
+	}
+	.sso .form-horizontal {
+		margin-top: 2% !important;
+	}
+	.page-header {
+		padding-bottom: 0.5% !important;
+		margin: 2% 0 2% !important;
+		width: 100% !important;
+	}
+	#forgot_pwd_div {
+		width: 60%;
+		position: absolute;
+		background-color: white;
+		top: 10%;
+		left: 90%;
+		line-height: 145%;
+		margin-left: -85%;
+		z-index: 5000;
+		padding-left: 5% !important;
+	}
+	#button_cancel_reset {
+		/* float: right; */
+		margin-left: 2% !important;
+		float: right !important;
+		padding: 0 4%;
+		min-width: 30% !important;
+		font-size: 140% !important;
+		width: 35%;
+	}
+	#button_reset_pwd {
+		float: left !important;
+		margin-left: 2% !important;
+		padding: 0 3% !important;
+		font-size: 140% !important;
+		width: 60% !important;
+		min-width: 45% !important;
+		text-overflow: ellipsis;
+	}
+	input#forgot_dialog_motoid {
+		width: 75% !important;
+		line-height: 100%;
+		font-size: 150% !important;
+		min-width: 40% !important;
+		height: 15% important;
+	}
+	.header2 {
+		font-size: 150%;
+		font-weight: normal;
+	}
+	#footer_lbl_organization_copyright,#footer_href_tos,#footer_href_privacy_policy
+		{
+		padding-right: 0 !important;
+	}
+	ul.footerLinkList {
+		width: 100% !important;
+	}
+	.footerLinks {
+		width: 80% !important;
+		height: 1px;
+	}
+	.sso .sso-note-spacer,.sso-note {
+		font-size: 120% !important;
+		line-height: 140% !important;
+		margin: 15% 2% 3% 0 !important;
+	}
+	.sso a {
+		font-family: inherit;
+		text-decoration: underline;
+		font-size: 140% !important;
+		/* 		line-height: 140%; */
+	}
+	#alert_dialog_box {
+		width: 45% !important;
+		top: 25% !important;
+		left: 65% !important;
+		padding: 2% 3% 2% 5% !important;
+		margin-left: -50% !important;
+	}
+	#verification_required_div {
+		width: 50% !important;
+		top: 35% !important;
+		left: 85% !important;
+		margin-left: -80% !important;
+		padding: 2% 2% 2% 2% !important;
+	}
+	button {
+		font-size: 150% !important;
+	}
+	#utility-nav td.main-links {
+		min-width: 100% !important;
+	}
+	.pcss3mm {
+		width: 100% !important;
+	}
+	.header {
+		overflow-x: hidden !important;
+	}
+	#label_forgot_dialog_title {
+		font-size: 155% !important;
+		line-height: 130% !important;
+	}
+	#button_vr_ok {
+		min-width: 40% !important;
+	}
+}

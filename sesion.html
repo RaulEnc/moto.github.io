@@ -1,0 +1,459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+    	<!-- <meta name="viewport" content="width=device-width, initial-scale=1">-->
+    	<meta name="viewport" content="width=device-width, height=device-height,  initial-scale=1.0, user-scalable=no;user-scalable=0;">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- THIS MUST BE FIRST! -->
+
+<!--		<script type="text/javascript" src="//nexus.ensighten.com/mmi/Bootstrap.js"></script>  -->
+        <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8"> 
+        <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/9qx0v7NiOAe_XnW_ULNZm9e3/recaptcha__es_419.js" crossorigin="anonymous" integrity="sha384-RevDr8QCm1YnPzE9gBEMkb1nILyaO7vYbImylfStabVd2COBG8Wai19/ytlW4FpU"></script><script async="" src="analytics.js"></script><script src="js/jquery-v1.7.1.min.js" type="text/javascript"></script> 
+        <script src="js/underscore-1.3.1-min.js" type="text/javascript"></script> 
+        <script src="js/backbone-0.9.1-min.js" type="text/javascript"></script> 
+        <script src="js/util.js" type="text/javascript"></script>
+        <script src="js/signup-AMP.js" type="text/javascript"></script>
+        <script src="js/LocaleList.js" type="text/javascript"></script>
+        <script src="js/browserDetect-min.js" type="text/javascript"></script>
+        <title id="title_page">Cuentas Motorola</title>
+        <link rel="stylesheet" type="text/css" href="css/signup-AMP.css"> 
+        <!--link rel="stylesheet" type="text/css" href="/ssoauth/web/css/reset.css" /-->
+        <link rel="stylesheet" type="text/css" href="css/common-AMP.css">
+        <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 960px)" href="css/mediaquery_signup.css">
+        
+        <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/tipsy.css">
+		<script src="js/jquery.tipsy.js" type="text/javascript"></script>
+
+		<script type="text/javascript">
+		//This script is added to import recaptcha api.js with environment specific key by adding script tag in the head
+			var gCaptchaKey;
+			switch (location.hostname){
+		       case 'accounts-qa300.blurdev.com':
+		         gCaptchaKey = "6LfZH9oZAAAAANlc2hux9XHBDvKAnhfiS-QKZ7-T";
+		         break;
+		       case 'accounts-sdc200.blurdev.com':
+		         gCaptchaKey = "6Le5h8YZAAAAAMS6fUOBmvTYve68iE9V2DLmMg7c";
+		         break;
+		       case 'accounts.motorola.com':
+		         gCaptchaKey = "6LfyH9oZAAAAAI5Oh-9MQ9tywMms_aoWKtQ6af15";
+		         break;
+		      }
+		    var JSLink = "https://www.google.com/recaptcha/api.js" + gCaptchaKey;
+		    var JSElement = document.createElement('script');
+		    JSElement.src = JSLink;
+		    document.getElementsByTagName('head')[0].appendChild(JSElement);
+		</script><script src="https://www.google.com/recaptcha/api.js?render=6LfyH9oZAAAAAI5Oh-9MQ9tywMms_aoWKtQ6af15"></script>
+
+<!-- BEGIN STANDARD MOTO HEADER -->
+
+    <link rel="stylesheet" type="text/css" href="css/motorola.css">
+   <script type="text/javascript">
+        document.write( '<style>#footer{visibility:hidden}@media(min-height:' + ($( window ).height() - 10) + 'px){#footer{visibility:visible}}</style>' );
+   </script><style>#footer{visibility:hidden}@media(min-height:779px){#footer{visibility:visible}}</style>
+
+   <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+     
+     switch (location.hostname){
+       case 'accounts-qa300.blurdev.com':
+         ga('create', 'UA-69862464-1', 'auto',{'siteSpeedSampleRate': 100});
+         break;
+       case 'accounts-sdc200.blurdev.com':
+         ga('create', 'UA-69862464-3', 'auto',{'siteSpeedSampleRate': 100});
+         break;
+       case 'accounts.motorola.com':
+         ga('create', 'UA-69862464-5', 'auto',{'siteSpeedSampleRate': 100});
+         break;
+      }
+      ga('send', 'pageview');
+    </script>
+  </head>
+    <body class="browserChrome browserChrome9">
+
+        <div class="header">
+        <table id="utility-nav" cellpadding="0" cellspacing="0" class="utility-nav ">
+          <tbody>
+            <tr class="tr-1">
+              <td class="related header-spacer" colspan="3"></td>
+            </tr>
+      
+              <tr class="tr-2">
+                <td class="logo">
+                  <a href="javascript:void(0)" onclick="openHomepageLink()"><img src="images/motorola-logo.png" alt="Motorola" border="0"></a>
+                </td>
+                <td class="main-links">
+      
+              <ul class="pcss3mm">
+                <li class="no-dropdown">
+                  <a class="moto_header_title loc_text_LABEL_MAIN_TITLE">Iniciar sesión en Motorola</a>
+                </li>
+      
+                </ul></td><td class="search">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="primaryNav" class="primaryNav">
+            <div></div>
+          </div>
+        </div> <!-- header -->
+      
+ <!-- Dart :: Start -->
+ <script type="text/javascript">
+     var axel = Math.random() + "";
+     var a = axel * 10000000000000;
+     var imgSrc = 'http://fls.doubleclick.net/activityi;src=1649785;type=enter978;cat=enter227;ord=' + a + '?';
+     document.write('<iframe src="' + imgSrc + '" style="height: 1px; width: 1px; position: absolute; z-index: 100000; border: 0pt none; left: 0pt; top: 0pt;"></iframe>');
+ </script>
+ <noscript>
+     <iframe src="http://fls.doubleclick.net/activityi;src=1649785;type=enter978;cat=enter227;ord=' + a + '?" width="1" height="1" frameborder="0"></iframe>
+ </noscript>
+
+ <!-- Dart :: End -->
+ <div id="primaryNav" class="primaryNav">
+    <div>       
+    </div>
+  </div>
+  <div id="body_div">
+    <div id="page_content_wrapper">
+        <div id="page_content_div">
+            <div id="devider_div" class="hidden">
+                <div class="vertical_devider_top"> </div>
+
+                <div id="vd_center" class="vertical_devider_center" style="height: 520px;"> </div>
+
+                <div class="vertical_devider_bottom"> </div>
+            </div>
+
+            <div id="signin_div" class="hidden" style="display: none;">
+                <div id="btm_left_motocast_div" class="hidden" style="margin-top: 100px;">
+                    <img id="signin_motocast_img" style="display:none;">
+                    <label id="label_motocast_id_title" class="header1" style="display: block;"></label>
+                    <label id="label_motocastad" class="body-copy1">MotoCast te permite disfrutar del contenido almacenado en tu ordenador personal desde cualquier parte y en todo momento.</label> 
+                    <div id="motocast_img_container">
+                        <div id="new_browser_img_div" class="hidden" style="display: block;">
+                            <img id="td_motocast_img" src="images/AMP-motocastid-art.png" style="margin-left: 0px;">
+                        </div>
+
+                        <div id="old_browser_img_div" class="hidden" style="display:none;">
+                        </div>
+                    </div>
+                </div> <!-- end of bottom_left_div -->
+
+                <div id="btm_right_div" style="display:none;">
+                    <div id="signin_body_div" class="signin_div">
+                        <img id="brd_img" src="images/motocastid_signin.png">
+                        <label id="label_signin" class="header2">Acceder</label>
+
+                        <div id="signin_err_div" class="hidden">
+                            <table border="0">
+                                <tbody><tr>
+                                    <td id="err_img_div"><img id="signin_err_img" align="left" src="images/icon-error-global.png"></td>
+                                     <td id="err_msg_div"><label id="label_signin_err_text1" class="err-messaging"></label>
+                                    <a href="javascript:void(0)" id="anchor_create_pwd" class="links-small"></a>
+                                    <label id="label_signin_err_text2" class="err-messaging"></label></td>
+                                </tr>
+                            </tbody></table>
+                        </div> <!-- end of signin_err_div -->
+
+                        <form id="login-form" onsubmit="return false">
+                            <div id="lbl_div">
+                                <label id="label_signin_google" class="body-copy3">Iniciar sesión con Google:</label>
+                            </div>
+                            <input type="button" id="button_signin_google" class="google_button" value="Google">
+                                                            
+                            <div id="div_create_id" class="visible">
+                                <label id="label_signup" class="body-copy3">¿No tienes una cuenta de Motorola?</label>
+                                <a href="javascript:void(0)" id="anchor_signup" class="links-small">Crear uno</a>
+                            </div>
+
+                            <div id="div_sign_in">
+                                <label id="label_signin_with" class="body-copy3">Iniciar sesión con</label>
+                                <a href="javascript:void(0)" id="anchor_signin" class="links-small">dirección de correo electrónico</a>
+                            </div>
+
+                        </form> <!-- end of form input -->
+
+                    </div> <!-- end of signin_body_div -->
+                </div> <!-- end of btm_right_div --> 
+                <div id="mbt_scroll_right_div"> 
+                    <label id="mob_scroll_right">Desplázate hacia la derecha para iniciar sesión -------&gt;&gt;</label> 
+                </div>
+            </div> <!-- end of signin_div -->
+
+            <div id="verify_div" class="hidden">
+
+                <div id="verify_inner_div">
+                    <div id="varify-heading">
+                        <label id="h2_verify_email" class="header1">Verifica tu dirección de correo electrónico</label>
+                    </div>
+                    <div id="varify-txt-blk2">
+                        <table id="verifytextemailTable" border="0">
+                            <tbody><tr>
+                                <td>
+                                <label id="verify_text2" class="body-copy1">El correo electrónico de verificación se ha enviado a</label>
+                                <label id="verify_mailID" class="body-copy2"></label>
+                                </td>
+                                 
+                            </tr>
+                        </tbody></table>
+                        <div>
+                            <a href="javascript:void(0)" id="anchor_choose_mail" class="links">Cambiar dirección de correo electrónico</a>
+                        </div>
+                    </div>
+                    <div id="varify-txt-blk3">
+                        <label id="verify_text3" class="body-copy1">Haz clic en el enlace de verificación del correo electrónico para activar la cuenta.</label>
+                    </div>
+
+                    <div id="verify_err_text" class="hidden">
+                        <label id="verify_text4" class="err-messaging">¿No has recibido el correo electrónico para activar la cuenta?</label>
+                    </div> <!-- end of verify_err_text div -->
+                    <div id="btn-blk">
+                        <input type="button" class="primary-button" id="b_signin" value="Acceder">
+                    </div>
+
+                    <div id="verify-txt-blk4">
+                        <label id="verify_text4" class="body-copy1"></label>
+                    </div>
+                    <div id="varify-txt-blk4">
+                        <a href="javascript:void(0)" id="anchor_resend_verification_code" class="links">Reenviar código de verificación</a>
+                    </div>
+                </div><!-- end of verify_inner_div  -->
+            </div> <!-- end of verify-div -->
+
+            <div id="signup_div" class="hidden" style="display: block;">
+
+                <div id="signup_header_div">
+                    <img id="signup_img" src="images/motocast_id.png">
+                    <div id="signup_header_text_div">
+                       <label id="lable_signup_header" class="header_signup">Crea un nuevo ID de Motorola</label> 
+                    </div>
+                </div>
+
+                <div id="signup_body_div">
+                    <div id="page_lvl_err_div" class="hidden" style="display: none;">
+                        <table border="0">
+                            <tbody><tr>
+                                <td> <img id="signup_err_img" src="images/icon-error-global.png"> </td>
+                                <td><label id="label_signup_err_text" class="err-messaging">La dirección de correo electrónico introducida ya está asociada a un ID de Motorola. Vuelve a iniciar sesión con el ID de Motorola o utiliza una dirección de correo electrónico diferente.</label></td>
+                            </tr>
+                        </tbody></table>
+                    </div> <!-- end of page_lvl_err_div -->
+
+                    <label id="lbl_create_id" class="body-copy5">Rellena la información que aparece a continuación para crear el ID de Motorola</label>
+                    
+                    
+                    <div id="signup_form_div">
+                        <form id="input" onsubmit="return false">
+                         <div id="signup_name_div">
+                            <div id="lbl_title4">
+                            <label id="lable_signup_name" class="body-copy5">Nombre</label>
+                            </div>
+<!-- 									<table border="0"> -->
+<!-- 										<tr> -->
+<!-- 											<td>  <input class="input_text_field" type="username" maxlength="100" id="signup_name" /> </td> -->
+<!-- 											<td style="padding-left:5px; width: 10px;>  <label id="lable_uname_help" class="body-copy4" ></label> </td> -->
+<!-- 							           	</tr> -->
+<!-- 					               	</table> -->
+                                <input class="input_text_field" maxlength="100" id="signup_name" required>
+                                <label id="lable_uname_help" class="body-copy4"></label>
+                           <div id="div_err_uname" class="hidden" style="display: none;">
+                                <label id="lable_err_uname" class="err-messaging">El nombre de usuario solo debe incluir letras, números y guión bajo.</label>
+                            </div>		
+                            </div>			               	
+                            <div id="signup_email_div">
+                              <div id="lbl_title4">
+                                 <label id="lable_signup_email" class="body-copy5">Dirección de correo electrónico</label>
+                               </div>
+                                <input class="input_text_field" maxlength="128" id="signup_email" required>
+                                <label id="lable_email_help" class="body-copy4"></label>
+                                <div id="div_err_email" class="hidden" style="display: none;">
+                                    <label id="lable_err_email" class="err-messaging">Dirección de correo electrónico no válida. Asegúrate de que la dirección de correo electrónico se ha introducido correctamente.</label>
+                                </div>
+                            </div>                          
+                            <div id="signup_pwd_div">
+                             <div id="lbl_title4">
+                                <label id="lable_signup_pwd" class="body-copy5">Contraseña</label>
+                                </div>
+                                <input class="input_text_field" type="password" maxlength="20" id="signup_pwd" required>
+                                <label id="lable_npwd_help" class="body-copy4"></label>
+                                <div id="div_err_npwd" class="hidden" style="display: none;">
+                                    <label id="lable_err_npwd" class="err-messaging">La contraseña debe tener entre 6 y 20 caracteres de longitud sin espacios.</label>
+                                </div>
+                            </div>
+                            <div id="signup_cfpwd_div">
+                              <div id="lbl_title4">
+                                <label id="lable_signup_cfpwd" class="body-copy5">Confirmar contraseña</label>
+                                </div>
+                                <input class="input_text_field"  required="true" type="password" maxlength="20" id="signup_cfpwd">
+                                <div id="div_err_cfpwd" class="hidden">
+                                    <label id="lable_err_cfpwd" class="err-messaging">La confirmación de la contraseña no coincide.</label>
+                                </div>
+                            </div>
+                            <div id="captcha_div" class="hidden" style="margin-top: 15px">
+                                <div id="lbl_title4">
+                                   <label class="body-copy5" id="label_signup_captcha">Código de verificación</label>
+                                </div>
+                                  <div><input class="input_text_field" name="j_captcha_response" type="text" style="float:left;" id="signup_captcha">
+                                  <div style="clear:both;"></div><br>
+                                 <div> <a id="captchaClick"><img id="captchaImage" style="float:left;" src="captcha.jpg"></a>
+                                  </div>
+                                  </div>
+                            </div>
+                            <div style="clear:both;"></div>
+
+                            <div id="signup_tandc_div">
+                                <label id="label_signup_tandc_text1" class="body-copy3">Al hacer clic en "Crear", aceptas los</label>
+                                <a href="javascript:void(0)" onclick="openHomepageLink()" id="anchor_signup_tandc_link" class="links-small"> Términos y condiciones de Motorola </a>
+                                <label id="label_signup_tandc_text1_1" class="body-copy3">y otras políticas de privacidad. </label>
+                            </div>
+
+                            <a href="Usuario.html"><input type="button" class="secondary-button" id="_bcreateacc" value="Crear" ></a>                         
+                            <a href="index.html"><input type="button" class="secondary-button" id="_bcancel" value="Cancelar"></a>
+                        </form>
+                    </div> <!-- end of signup_form_div -->
+                </div> <!-- end of signup_body_div -->   
+            </div> <!-- end of signup_div --> 
+
+            <div id="signup_google_div" class="hidden">
+
+                <div id="signup_google_header_div">
+                    <img id="signup_google_img" src="images/motocast_id.png">
+                    <div id="signup_google_header_text_div">
+                        <label id="lable_signup_google_header" class="header1">Crea un nuevo ID de Motorola</label>
+                    </div>
+                </div>
+
+                <div id="signup_google_body_div">
+                    <div id="page_lvl_err_div" class="hidden">
+                        <table border="0">
+                            <tbody><tr>
+                                <td> <img id="signup_google_err_img" src="images/icon-error-global.png"> </td>
+                                <td><label id="label_signup_google_err_text" class="err-messaging"></label></td>
+                            </tr>
+                        </tbody></table>
+                    </div> <!-- end of page_lvl_err_div -->
+                    <label id="label_signin_google_fillin" class="body-copy1">Utiliza esta cuenta para iniciar sesión en las aplicaciones y servicios de Motorola y en cualquier otra parte donde sea necesaria una cuenta de MotoCast.</label>
+                    <div id="">
+                        <div id="signup-google-btn-blk">
+                            <label id="signup_with_google" class="body-copy1">Crea un ID con</label>
+                            <input type="button" id="button_signup_google_screen" class="google_button" value="Google">
+                            <input type="button" class="secondary-button" id="google_signup_cancel" value="Cancelar">	                                
+                        </div>      
+                    </div>
+                    <div id="signup_google_tandc_div">
+                        <label id="label_signup_google_tandc_text1" class="body-copy3">Al hacer clic en "Crear", aceptas los</label>
+                        <a href="javascript:void(0)" id="anchor_signup_google_tandc_link" class="links-small"> Términos y condiciones de Motorola.</a>
+                    </div>
+                    <div id="signup_google_mid_div">
+                        <a href="javascript:void(0)" id="label_signup_google_mid_text1" class="links-small">Crea una cuenta de Motorola</a>                            
+                        <label id="label_signup_google_mid_text2" class="body-copy3">usando una dirección de correo electrónico que no es de Google.</label>
+                    </div>                           
+                    <label id="lbl_create_id" class="body-copy1"></label>
+
+                    <div id="signup_google_form_div">
+                       
+                    </div> <!-- end of signup_google_form_div -->
+                </div> <!-- end of signup_google_body_div -->   
+            </div> <!-- end of signup_google_div --> 
+
+            <div id="signin_account_div" class="hidden">
+
+                <div id="signin_header_div">
+                    <img id="signin_img" src="images/motocast_id.png">
+                    <div id="signin_header_text_div">
+                        <label id="label_signin_header" class="header1">Inicia sesión con una dirección de correo electrónico</label>
+                    </div>
+                </div>
+
+                <div id="signin_body_div">                        
+                    <div id="signin_account_err_div" class="hidden">
+                        <table border="0">
+                            <tbody><tr>
+                                <td> <img id="signin_err_img" src="images/icon-error-global.png"> </td>
+                                <td><label id="label_signin_account_err_text" class="err-messaging"></label></td>
+                            </tr>
+                        </tbody></table>
+                    </div> <!-- end of page_lvl_err_div -->
+                             
+                    <label id="label_signin_fillin" class="body-copy1">Rellena el siguiente formulario para iniciar sesión en tu cuenta de Motorola.</label>
+
+                    <div id="signin_form_div">
+                        <form id="input2" onsubmit="return false">
+                            <div id="signin_email_div">
+                                <label id="lable_signup_email" class="browser-old"></label>
+                                <input class="input_text_field" maxlength="128" id="signin_email" placeholder="Dirección de correo electrónico" required>
+                                <label id="lable_email_help" class="body-copy4"></label>
+                                <div id="div_err_email" style="" class="hidden">
+                                    <label id="lable_err_email" class="err-messaging"></label>
+                                </div>
+                            </div>                          
+                            <div id="signin_pwd_div">
+                                <label id="lable_signin_pwd" class="browser-old"></label>
+                                <input class="input_text_field" type="password" maxlength="20" id="signin_pwd" placeholder="Contraseña" required>
+                                <label id="lable_npwd_help" class="body-copy4"></label>
+                                <div id="div_err_npwd" class="hidden">
+                                    <label id="lable_err_npwd" class="err-messaging"></label>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0)" id="anchor_forgetpass" class="links-small">¿Has olvidado la contraseña?</a>
+                            <div>
+                            <a href="javascript:void(0)" input type="submit" class="primary-button" id="button_signin" value="Acceder">
+                            </div>
+                            
+                            <div id="div_create_id">
+                                <label id="label_signup_account" class="body-copy3">¿No tienes una cuenta de Motorola?</label>
+                                <a href="javascript:void(0)" id="anchor_signup_account" class="links-small">Crear uno</a>
+                            </div>
+                        </form>
+                    </div> <!-- end of signin_form_div -->
+                </div> <!-- end of signin_body_div -->   
+            </div> <!-- end of signin_div --> 
+
+            <div id="new_acc_confirmation_div" class="hidden">
+                <div id="nac_header_div">
+                    <img id="nac_img" src="images/motocast_id.png">
+                    <div id="nac_header_text_div">
+                        <label id="lable_welcome_msg" class="header1">Bienvenido/a </label>
+                    </div>
+                </div>
+
+                <div id="nac_body_div">
+                    <label id="nac_msg1" class="body-copy1">Se ha creado tu ID de Motorola.</label>
+                    <label id="nac_email_id" class="body-copy2"></label>
+                    <label id="nac_msg2" class="body-copy1">Utiliza este ID para iniciar sesión en las aplicaciones y servicios de Motorola y en cualquier otra parte donde sea necesario el ID de Motorola. </label>
+                    <input type="button" class="primary-button" id="_bContinue" value="Continuar">
+                </div> <!-- end of nac_body_div -->   
+            </div> <!-- end of new_acc_confirmation_div --> 
+
+        </div> <!-- page_content_div -->
+    </div> <!--page_content_wrapper-->
+
+</div>
+
+    <div id="footer">
+        <div class="footerInner">
+          <div class="footer-bug">
+             <a href="javascript:void(0)" onclick="openHomepageLink()" title="Motorola"><img src="images/motorola-lenovo.png" title="Motorola"></a>
+          </div>
+          <div class="footer-margin">
+    
+            <div class="footerTop">
+              <div class="footerLinks">
+                <ul id="footerLinks" class="footerLinkList">
+                  <li><a class="moto_footer_copyright">©<span class="loc_text_LABEL_ORGANIZATION_COPYRIGHT">2021 Motorola Mobility Inc.</span></a></li>
+    
+                  <li><a title="Legal" href="javascript:void(0)" onclick="openLegalLink()"><span class="loc_text_LEGAL_BTN">Términos de uso y política de privacidad</span></a></li>
+                  
+                </ul>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
+
+
+    

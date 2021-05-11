@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, height=device-height,  initial-scale=1.0, user-scalable=no;user-scalable=0;">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- THIS MUST BE FIRST! -->
+
+      <title xml:lang="en">Cuentas Motorola</title>
+      <meta xml:lang="en" name="keywords" content="">
+      <meta xml:lang="en" name="description" content="Sign in to Motorola">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!--  <script type="text/javascript" src="//nexus.ensighten.com/mmi/Bootstrap.js"></script>  -->
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <script src="js/jquery-v1.7.1.min.js" type="text/javascript"></script>
+    <script src="js/underscore-1.3.1-min.js" type="text/javascript"></script>
+    <script src="js/backbone-0.9.1-min.js" type="text/javascript"></script>
+    <script src="js/signup.js" type="text/javascript"></script>
+    <script src="js/LocaleList.js" type="text/javascript"></script>
+    <script src="js/browserDetect-min.js" type="text/javascript"></script>
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
+
+
+      <link rel="stylesheet" type="text/css" href="css/default.css">
+    
+      <link rel="stylesheet" type="text/css" href="css/motorola.css">
+      <link rel="stylesheet" type="text/css" href="css/sso.css">
+      <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 960px)" href="css/mediaquery.css">
+      
+   <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+     
+     switch (location.hostname){
+       case 'accounts-qa300.blurdev.com':
+         ga('create', 'UA-69862464-1', 'auto',{'siteSpeedSampleRate': 100});
+         break;
+       case 'accounts-sdc200.blurdev.com':
+         ga('create', 'UA-69862464-3', 'auto',{'siteSpeedSampleRate': 100});
+         break;
+       case 'accounts.motorola.com':
+         ga('create', 'UA-69862464-5', 'auto',{'siteSpeedSampleRate': 100});
+         break;
+     }
+     ga('send', 'pageview');
+   </script>
+  </head>
+<body class="browserChrome browserChrome9">
+
+  <div class="header">
+  <table id="utility-nav" cellpadding="0" cellspacing="0" class="utility-nav ">
+    <tbody>
+      <tr class="tr-1">
+        <td class="related header-spacer" colspan="3"></td>
+      </tr>
+
+        <tr class="tr-2">
+          <td class="logo">
+            <a href="javascript:void(0)" onclick="openHomepageLink()"><img src="images/motorola-logo.png" alt="Motorola" border="0"></a>
+          </td>
+          <td class="main-links">
+
+        <ul class="pcss3mm">
+          <li class="no-dropdown">
+            <a class="moto_header_title loc_text_LABEL_MAIN_TITLE">Iniciar sesión en Motorola</a>
+          </li>
+
+          </ul></td><td class="search">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="primaryNav" class="primaryNav">
+      <div></div>
+    </div>
+  </div> <!-- header -->
+
+
+  <!-- PAGE CONTENT -------------------- -->
+  <div id="page_content_wrapper" class="sso wrap wrapNoPreloader">
+    <div id="page_content_div" class="sso-container">
+      <div id="signin_div">
+
+        <!-- MAIN PAGE -------------------- -->
+        <!-- EMAIL SIGNIN PAGE -------------------- -->
+        <div id="signin_email_page" class="">
+          <div class="page-header">
+            <h2><span class="loc_text_MAIN_TITLE">Iniciar sesión en Motorola</span></h2>
+          </div>
+          <div class="sso-left-column">
+            <form id="fm1" class="form-horizontal" action="/ssoauth/login" method="post">
+              
+              <input type="hidden" name="lt" value="LT-77352-tPIUorWrN9tmCvjUTbSqjjOksD3yzL">
+              <input type="hidden" name="execution" value="e1s1">
+              <input type="hidden" name="_eventId" value="submit">
+              <div id="lbl_title4">
+                <label class="loc_text_LABEL_EMAIL_ADDRESS body-copy5">Dirección de correo electrónico</label>
+              </div>
+              <div class="control-group">
+                <div class="controls">
+                  <input id="username" name="username" class="input_text_field" tabindex="1" required="true" type="text" value="" size="25" maxlength="100" autocomplete="false">
+                </div>
+              </div>
+              <div id="lbl_title4">
+                <label class="loc_text_LABEL_PASSWORD body-copy6">Contraseña</label>  <a id="forgetpass_link" href="#" class="sso-small-link_forgot_pwd sso-note-spacer_forgotpwd loc_text_HREF_FORGETPASS">¿Has olvidado la contraseña?</a>
+                </div>
+              <div class="control-group">
+                <div class="controls">
+                  <input id="password" name="password" class="input_text_field" tabindex="2" required="true" type="password" value="" size="25" maxlength="20" autocomplete="off">&nbsp;&nbsp;&nbsp;    
+                <!--  <a id="forgetpass_link" href="#" class="sso-small-link loc_text_HREF_FORGETPASS"></a>-->
+                </div>
+              </div>
+               <div id="captcha_div" class="hidden" style="margin-top: 15px">
+                                        <div id="lbl_title4">
+                                           <label class="body-copy5" id="label_signup_captcha">Código de verificación</label>
+                                        </div>
+                                          <div><input class="input_text_field" name="j_captcha_response" type="text" style="float:left;" id="signup_captcha">
+                                           <div style="clear:both;"></div>
+                                           <br>
+                                          <a id="captchaClick"><img id="captchaImage" style="float:left;" src="web/captcha.jpgt=1"></a>
+                                          </div>
+              </div>
+                <div style="clear:both;"></div>
+                <br>
+              <div class="control-group">
+                <div class="controls">
+                  <button id="button_signin" class="btn loc_text_BUTTON_SIGNIN" tabindex="3">Acceder</button>
+                </div>
+              </div>
+            </form>
+
+             <div id="signup_email_link">
+                <label id="label_forgot_dialog_text4_part1" class="loc_text_LABEL_SIGNUP body-copy4">¿No tienes una cuenta de Motorola?</label>
+                <a href="sesion.html" id="signup_link" class="loc_text_LABEL_FORGOT_DIALOG_TEXT4_PART2 links-small">Iniciar sesión con un ID de Motorola</a>
+             </div> 
+          </div>
+
+          <div style="clear:both;"></div>
+        </div> <!-- end of signin_email_page -->
+
+
+        <!-- Google SIGNIN PAGE -------------------- -->
+        <div id="signin_google_page" class="">
+          <div class="page-header">
+              <div class="loc_text_DIVIDER_OR hline-text">O BIEN</div>
+          </div>
+          <div class="sso-left-column">
+            <p class="lead"><span class="loc_text_MAIN_GOOGLE_HEAD">Usar tu cuenta de Google</span></p>
+            <p class="loc_text_MAIN_GOOGLE_TEXT">Iniciar sesión en Motorola con una cuenta de Google es pan comido. Si has activado el dispositivo con una cuenta de Google, deberás iniciar sesión con la misma cuenta aquí.</p>
+          </div>
+          <div class="sso-right-column">
+            <div class="btn-sso-google">
+              <a id="signin_google_button" href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?response_type=code&access_type=offline&approval_prompt=force&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&client_id=878621364348-ptfik9j1oe26lti8l4ohi5c66h9c9buo.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Faccounts.motorola.com%2Faccount-service-1.0%2Foauth2callback%2Fgoogle%3Fapp_id%3DDPOQDFUXWO5C7YKNFV74A617EEA6SJQR%26client_type%3D2&state=https%3A%2F%2Faccounts.motorola.com%2Fssoauth%2Fweb%2Fgoogle_signin.html%3Fsvc%3Dcas_google_signup%26src%3Dcas%26locale%3Des_ES%26appid%3DDPOQDFUXWO5C7YKNFV74A617EEA6SJQR%26continue_url%3Dhttps%253A%252F%252Faccounts.motorola.com%252Fssoauth%252Flogin%253FTARGET%253Dhttps%253A%252F%252Faccounts.motorola.com%252Fssoauth%252Fweb%252Fmanage_account_details.html&flowName=GeneralOAuthFlow" class="button btn-google"><div class="btn-google-left"></div><div class="btn-google-right loc_text_MAIN_GOOGLE_BTN">Iniciar sesión con Google</div></a>
+            </div>
+         </div>
+        <!-- End of GOOGLE SIGNIN PAGE -------------------- -->
+
+        <div id="signin_facebook_page" class="hidden">
+            <div style="clear:both;"></div>
+            <div class="page-header">
+                <div class="loc_text_DIVIDER_OR hline-text">O BIEN</div>
+            </div>
+          <div class="sso-left-column">
+            <p class="lead">
+              <span class="loc_text_MAIN_FACEBOOK_HEAD">Usa tu cuenta de Facebook</span></p>
+            <p class="loc_text_MAIN_FACEBOOK_TEXT">Es muy sencillo iniciar sesión en Motorola con tu cuenta de Facebook.</p></div>
+
+          <div class="sso-right-column">
+            <div class="btn-sso-facebook">
+              <a id="signin_facebook_button" href="javascript:void(0)" class="button btn-facebook">
+                <div class="btn-facebook-left"></div>
+                <div class="btn-facebook-right loc_text_MAIN_FACEBOOK_BTN">Iniciar sesión con Facebook</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+          <div style="clear:both;"></div>
+          <div id="signin_email_link_sect" class="hidden">        
+            <div class="page-header">
+              <div class="loc_text_DIVIDER_OR hline-text">O BIEN</div>
+            </div>
+            <div class="sso-left-column">
+              <p class="lead loc_text_MAIN_EMAIL_HEAD2 for_signin">¿Ya tienes una cuenta de Motorola?</p>
+              <p class="lead loc_text_MAIN_EMAIL_HEAD for_signup hidden">Usar otra dirección de correo electrónico</p>
+              <p class="for_signin"><span class="loc_text_MAIN_EMAIL_TEXT3 for_signin">Inicia sesión en tu cuenta de Motorola y podrás vincularla a tu cuenta de Google.</span></p>
+              <p class="for_signup hidden"><span class="loc_text_MAIN_NEW_EMAIL_TEXT1">Para la mayoría de funciones se necesita una cuenta de Google, pero si solo quieres disfrutar del servicio de garantía, puedes </span><a id="signup_email_link" href="#" class="loc_text_MAIN_NEW_EMAIL_BTN">crea una cuenta con cualquier dirección de correo electrónico</a><span class="loc_text_MAIN_NEW_EMAIL_TEXT2">.</span></p>
+            </div>
+            <div class="sso-right-column for_signin">
+              <!-- To minimize the scope of this temporary change, I am putting the styles inline. -->
+              <div style="margin: 40px 0 0 0;">
+                <a id="signin_email_link" href="sesion.html" class="button loc_text_MAIN_MOTOID_BTN" style="padding: 0 32px; line-height: 44px; height: 44px; font-family: Roboto,arial,sans-serif;">Iniciar sesión con ID de Motorola</a>
+              </div>
+            </div>
+            <div style="clear:both;"></div>
+          </div>
+        </div> <!-- end of signin_google_page -->
+
+        <!-- EMAIL SIGNIN PAGE -------------------- -->
+        <div id="signin_email_page" class="hidden">
+          <div class="page-header">
+            <h2><span class="loc_text_MAIN_TITLE">Iniciar sesión en Motorola</span></h2>
+          </div>
+          <div class="sso-left-column">
+            <p class="lead loc_text_MAIN_EMAIL_HEAD2">¿Ya tienes una cuenta de Motorola?</p>
+            <p class="loc_text_EMAIL_SIGNIN_TEXT">Inicia sesión más abajo.</p>                
+            <form id="fm1" class="form-horizontal" action="/ssoauth/login" method="post">
+              
+              <input type="hidden" name="lt" value="LT-77352-tPIUorWrN9tmCvjUTbSqjjOksD3yzL">
+              <input type="hidden" name="execution" value="e1s1">
+              <input type="hidden" name="_eventId" value="submit">
+             
+              <div id="lbl_title4">
+                 <label class="loc_text_LABEL_EMAIL_ADDRESS body-copy5">Dirección de correo electrónico</label>
+               </div>
+              
+              <div class="control-group">
+                <div class="controls">
+                  <input id="username" name="username" class="input_text_field" tabindex="1" required="true" type="text" value="" size="60" maxlength="100" autocomplete="false">
+                </div>
+              </div>
+            
+              <div id="lbl_title4">
+                 <label class="loc_text_LABEL_PASSWORD body-copy6">Contraseña</label>  <a id="forgetpass_link" href="#" class="sso-small-link_forgot_pwd sso-note-spacer_forgotpwd loc_text_HREF_FORGETPASS">¿Has olvidado la contraseña?</a>
+               </div>
+            
+              <div class="control-group">
+                <div class="controls">
+                  <input id="password" name="password" class="input_text_field" tabindex="2" required="true" type="password" value="" size="60" maxlength="20" autocomplete="off">
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="controls">
+                  <button type="submit" class="btn loc_text_BUTTON_SIGNIN">Acceder</button>
+                </div>
+              </div>
+            </form>
+
+            <div id="signup_email_link">
+                <label id="label_forgot_dialog_text4_part1" class="loc_text_LABEL_SIGNUP body-copy4">¿No tienes una cuenta de Motorola?</label>
+                <a href="sesion.html"> id="signup_link" class="loc_text_LABEL_FORGOT_DIALOG_TEXT4_PART2 links-small">Iniciar sesión con un ID de Motorola</a>                
+              </div>
+
+          </div> 
+          <div style="clear:both;"></div>
+        </div> <!-- end of signin_email_page -->
+
+      </div> <!-- end of signin_div -->
+    </div> <!-- page_content_div -->
+  </div> <!--page_content_wrapper-->
+
+
+  <!-- BEGIN: Footer -->
+  <div id="footer" class="">
+    <div class="footerInner">
+      <div class="footer-bug">
+         <a href="javascript:void(0)" onclick="openHomepageLink()"><img src="images/motorola-lenovo.png" title="Motorola"></a>
+      </div>
+      <div class="footer-margin">
+
+        <div class="footerTop">
+          <div class="footerLinks">
+            <ul id="footerLinks" class="footerLinkList">
+              <li><a class="moto_footer_copyright">©<span class="loc_text_LABEL_ORGANIZATION_COPYRIGHT">2021 Motorola Mobility Inc.</span></a></li>
+
+              <li><a href="javascript:void(0)" onclick="openLegalLink()"><span class="loc_text_LEGAL_BTN">Términos de uso y política de privacidad</span></a></li>
+              
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END: Footer -->
+
+
+
+
+<div id="forgot_pwd_div" class="sso hidden">
+    <!-- Layer used to create shadow in IE  -->
+    <div id="forgot_pwd_div_IE">
+        <div class="close_img_div_forgot_pwd">
+            <img id="img_close" src="images/close.png">
+        </div>
+
+        <div id="lbl_title1">
+            <label id="label_forgot_dialog_title" class="loc_text_TITLE_FORGOT_DIALOG header2">¿Has olvidado la contraseña?</label>
+        </div>
+        <div id="lbl_title2">
+            <label id="label_forgot_dialog_text1" class="loc_text_LABEL_FORGOT_DIALOG_TEXT1 body-copy1">Introduce tu ID de Motorola. Al pulsar Restablecer contraseña, se enviará un mensaje con instrucciones y un enlace sobre cómo restablecer la contraseña a la dirección de correo electrónico asociada al ID de Motorola.</label>
+        </div>
+        <form name="forgot_pwd_form" onsubmit="return false">
+            <label id="label_forgot_dialog_email" class="loc_text_LABEL_USERID browser-old">ID de Motorola</label>
+
+            <div id="input_div1">
+                <input type="text" id="forgot_dialog_motoid" class="loc_placeholder_LABEL_EMAIL_ADDRESS input_text_field" maxlength="128" placeholder="Dirección de correo electrónico">
+            </div>
+            <div id="forgot_pwd_sub_div" class="hidden">
+                <label id="label_forgot_dialog_text2" class="loc_text_LABEL_FORGOT_DIALOG_TEXT2 err-messaging">Dirección de correo electrónico no válida. Debes usar la dirección de correo electrónico que usaste para configurar tu cuenta de Motorola.</label>
+            </div>
+            <div id="lbl_title3">
+                <label id="label_forgot_dialog_text4_part1" class="loc_text_LABEL_FORGOT_DIALOG_TEXT4_PART1 body-copy4">Si has olvidado tu ID de Motorola, tendrás que </label>
+                <a href="javascript:void(0)" id="label_forgot_dialog_text4_part2" class="loc_text_LABEL_FORGOT_DIALOG_TEXT4_PART2 links-small">Iniciar sesión con un ID de Motorola</a>
+                <label id="label_forgot_dialog_text4_part3" class="loc_text_LABEL_FORGOT_DIALOG_TEXT4_PART3 body-copy4">con otra dirección de correo electrónico.</label>
+            </div>
+
+
+            <input type="button" id="button_cancel_reset" class="button loc_val_BUTTON_CANCEL btn-cancel" value="Cancelar">
+            <input type="submit" id="button_reset_pwd" class="button loc_val_BUTTON_RESET_PASSWORD disabled-button" value="Restablecer contraseña" disabled="disabled">
+        </form>
+    </div>
+    <div id="forgot_pwd_Shadow_IE_no"></div>
+</div>
+<div id="spinner_box" class="sso hidden">
+    <div id="spinner-box_IE">
+        <img id="spinner_img" src="images/spinner.gif">
+        <div id="spinner-lbl-box" align="center">
+            <label id="spinner_text" class="body-copy3"></label>
+        </div>
+    </div>
+    <div id="spinner-box_Shadow_IE_no"></div>
+</div>
+
+<div id="alert_dialog_box" class="sso hidden">
+    <div id="alert_dialog_box_IE">
+        <div class="close_img_div_alert">
+            <img id="img_close" src="images/close.png">
+        </div>
+        <div class="alert_title_blk">
+            <label id="alert_title" class="header2"></label>
+        </div>
+        <div class="body-copy1 alert_body_blk" id="alert_text">
+            <!--label id="alert_text" class="body-copy1"></label-->
+        </div>
+        <input type="button" id="alert_ok" class="button loc_val_BUTTON_OK" value="Aceptar">
+    </div>
+    <div id="alert_dialog_Shadow_IE_no"></div>
+</div>
+
+<div id="verification_required_div" class="sso hidden">
+    <div id="verification_required_IE">
+        <div class="close_img_div_verification">
+            <img id="img_close" src="images/close.png">
+        </div>
+
+        <div class="alert_title_blk">
+            <label id="label_vr_title" class="loc_text_TITLE_FORGOT_DIALOG_VERIFICATION_REQUIRED header2">Se requiere verificación</label>
+        </div>
+        <div class="alert_body_blk">
+            <label id="label_vr_text1" class="loc_text_LABEL_FORGOT_DIALOG_VERIFICATION_REQUIRED1 body-copy1">No puedes restablecer la contraseña porque tu ID de Motorola no se ha verificado. Visita </label>
+            <a href="javascript:void(0)" id="anchor_vr_link" class="loc_text_HREF_CLICK_HERE links">Pasos para verificar tu ID de Motorola</a>
+            <label id="label_vr_text1_1" class="loc_text_LABEL_FORGOT_DIALOG_VERIFICATION_REQUIRED1_1 body-copy1"> para obtener más información.</label>
+        </div>
+        <input type="button" id="button_vr_ok" class="button loc_val_BUTTON_OK" value="Aceptar">
+    </div>
+    <div id="alert_dialog_Shadow_IE_no"></div>
+</div> <!-- end of verification_required_div -->
+</body>
+</html>

@@ -1,0 +1,656 @@
+
+/*----------------------------------------------------------------------------*/
+/*                      SSO		                                  */
+/*                      font include files line 35 and Opens Sans in HTML Doc */
+/*----------------------------------------------------------------------------*/
+
+.sso-container { font-family: 'Open Sans', Arial, serif; font-weight: 300; color:#215a6d; border:0px solid red; padding:100px 100px 125px 100px; margin:0 auto; }
+.sso a { font-family: inherit; text-decoration:underline; }
+.sso a:hover { font-family: inherit; color:#215a6d; text-decoration:none; }
+.sso .sso-small-link a { color:#215a6d; text-decoration:underline; }
+
+.sso .sso-small-link_forgot_pwd a { display:inline; color:#215a6d; text-align: right; padding-left: 20px; margin-left: 20px;}
+.sso .sso-small-link_forgot_pwd a:hover { color:#215a6d; text-decoration:none;}
+.sso .sso-note-spacer_forgotpwd { font-family: 'Open Sans', Arial, serif; font-size:11px; font-weight:400; display:inline; padding-left: 20px;}
+
+.sso .sso-small-link a:hover { color:#215a6d; text-decoration:none; }
+.sso .sso-note-spacer, .sso-note { font-family: 'Open Sans', Arial, serif; font-size:11px; font-weight:400; display:block; margin:50px 2px 0 0;}
+.sso .sso-note { font-family: 'Open Sans', Arial, serif; font-size:11px; font-weight:400; display:block; }
+.sso h2 { font-family: 'Conv_MotoSans-Semibold', Open Sans, Arial, serif; font-weight: 300; font-size:28px; color:#215a6d; text-rendering: optimizelegibility; margin: 10px 0; }
+.sso p {  font-family: inherit; font-size:15px; margin: 0 0 10px; line-height:24px; color:#215a6d; }
+.sso p.lead { font-family: inherit; margin: 3px 0 17px 0; font-size: 19px; line-height: 25px; color:#215a6d; }
+.page-header { padding-bottom: 9px; margin: 20px 0 30px; border-bottom: 1px solid #dddddd; }
+.sso p.lead.lead-spacer { margin-top:40px; }
+.sso .sso-left-column { font-family: inherit; display:block; float:left; border:0px solid green; width:460px; }
+.sso .sso-wide-column { font-family: inherit; display:block; float:left; border:0px solid green; width:660px; }
+.sso .sso-right-column { font-family: inherit; display:block; float:left; text-align:right; border:0px solid black; width:290px; }
+
+.sso .sso-right-column_lenovo { font-family: inherit; display:inline-block; text-align:right; border:0px solid black; width:290px; }
+.sso .sso-left-column_lenovo { font-family: inherit; display:inline-block; border:0px solid green; width:460px; }
+
+.sso .form-horizontal { margin-top:30px; }
+.form-horizontal .controls { margin-left: 0px; }
+.form-horizontal .control-group { margin-bottom: 20px; }
+.sso .form-horizontal input[type=text], .sso .form-horizontal input[type=password] { display: inline-block; *display: inline; margin-bottom: 0; vertical-align: middle; *zoom: 1;}
+.sso .form-horizontal .control-group { margin-bottom: 20px; *zoom: 1; }
+.sso .form-horizontal .control-group:before, .sso .form-horizontal .control-group:after { display: table; line-height: 0; content: ""; }
+.sso .form-horizontal .control-group:after { clear: both; }
+.sso input[type=text], .sso input[type=password] {  display: inline-block;  height: 25px;  padding: 4px 6px;  margin-bottom: 12.5px; font-family: 'Open Sans', Arial, serif; font-weight: 400;  font-size: 12px;  line-height: 25px;  color: #555555;  -webkit-border-radius: 4px;  -moz-border-radius: 4px;  border-radius: 4px;  border: 1px solid #ccc;  vertical-align: middle; background: #ffffff; }
+.sso input[type=text], .sso input[type=password], .uneditable-input { width: 206px; }
+.sso input[type=text], .sso input[type=password], { background-color: #ffffff; border: 1px solid #cccccc; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -webkit-transition: border linear .2s, box-shadow linear .2s; -moz-transition: border linear .2s, box-shadow linear .2s; -o-transition: border linear .2s, box-shadow linear .2s; transition: border linear .2s, box-shadow linear .2s; }
+.sso input[type=text]:focus, .sso input[type=password]:focus, uneditable-input:focus { border-color: rgba(82, 168, 236, 0.8); outline: 0; outline: thin dotted \9;
+/* IE6-9 */
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6); }
+
+
+
+.visible {
+	display: visible !important;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.invis {
+	visibility: hidden !important;
+}
+
+
+/* spinner and alert popups */
+
+#spinner_box {
+    -webkit-box-shadow: 0px 2px 9px 3px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 2px 9px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 2px 9px 3px rgba(0, 0, 0, 0.4);
+
+    width: 180px;
+    background-color: white;
+  
+    /*padding: 10px 25px 20px 25px;*/
+    position:absolute;
+/*    margin-top: 119px; */
+	top: 275px; /* 175 + 100(header height) */
+    left:50%;
+    margin-left: -90px;
+    
+    /* make sure it has the highest z-index */
+    z-index: 5000;
+}
+
+#alert_dialog_box {
+    -webkit-box-shadow: 0px 2px 9px 3px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 2px 9px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 2px 9px 3px rgba(0, 0, 0, 0.4);
+
+    /* styling of the dialog box, i have a fixed dimension for this demo */
+    width: 350px;
+    background-color: white;
+
+    position:absolute;
+	top: 275px; /* 175 + 100(header height) */
+	left:50%;
+	margin-left: -200px;
+	
+    /*278px;*/
+    /* make sure it has the highest z-index */
+    padding: 10px 25px 20px 25px;
+    z-index: 5000;
+}
+
+#verification_required_div {
+    -webkit-box-shadow: 0px 2px 9px 3px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 2px 9px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 2px 9px 3px rgba(0, 0, 0, 0.4);
+
+    /* styling of the dialog box, i have a fixed dimension for this demo */
+    width: 450px;
+    background-color: white;
+
+    position:absolute;
+    top:30%;
+	left:50%;
+	margin-left: -265px;
+	
+    /*278px;*/
+    /* make sure it has the highest z-index */
+    padding: 40px 40px 30px 40px;
+    z-index: 5000;
+}
+
+.browserIE8 #verification_required_IE {
+    width: 450px;
+    background-color: white;
+    border: 1px solid #CCC;
+    
+    position:absolute;
+    top:0%;
+	left:50%;
+	margin-left: -265px;
+	
+    /*278px;*/
+    /* make sure it has the highest z-index */
+    padding: 40px 40px 30px 40px;
+    z-index: 5000;
+}
+
+#spinner_img {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 25px;
+}
+
+#spinner-lbl-box {
+	margin:10px 15px 30px 15px;
+}
+
+#spinner_text {
+    overflow: hidden;
+    text-overflow: ellipsis;	/* not supported ff3.6*/
+    text-align: center;
+    font-size:13px;
+}
+
+.browserIE8 #spinner-box_Shadow_IE{
+    display:block;
+	position:absolute;
+	z-index:2; /*Positioning shadow under content*/
+	top:4px;
+	left:19px;
+	right:-24px;
+	bottom:20px;
+          
+	filter:progid:DXImageTransform.Microsoft.Blur(pixelradius=3);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Blur(pixelradius=3)";
+
+            /*Setting blur size of shadow in IE*/
+	background:#444;/*Setting shadow's color */
+}
+
+#spinner-box_Shadow_IE, #alert_dialog_Shadow_IE{
+	display:none;
+	/*Hiding this layer for non-IE browsers */
+}
+
+
+.browserIE #alert_dialog_box, .browserIE #spinner_box{
+	background: none;
+}
+
+.browserIE #alert_dialog_box_IE {
+      /* styling of the dialog box, i have a fixed dimension for this demo */
+    width: 350px;
+    background-color: white;
+/*    padding: 10px 25px 60px 25px; */
+    z-index: 5000;
+    
+    position:absolute;
+	top: 0px;
+	left:50%;
+	margin-left: -200px;
+	
+    /*278px;*/
+    /* make sure it has the highest z-index */
+    padding: 10px 25px 20px 25px;
+    border: 1px solid #CCC;
+}
+
+.browserIE #spinner-box_IE {
+	/* styling of the dialog box, i have a fixed dimension for this demo */
+    width: 180px;
+    background-color: white;
+    border: 1px solid #CCC;
+      
+    /*padding: 10px 25px 20px 25px;*/
+    position:absolute;
+    top: 0px; /* 175 - 56 */
+    left:50%;
+    margin-left: -90px;
+    
+    /* make sure it has the highest z-index */
+    z-index: 5000;
+
+}
+
+#alert_dialog_Shadow_IE{
+    display:block;
+	position:absolute;
+	z-index:2; /*Positioning shadow under content*/
+	top:4px;
+	left:19px;
+	right:-24px;
+	bottom:20px;
+          
+	filter:progid:DXImageTransform.Microsoft.Blur(pixelradius=3);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Blur(pixelradius=3)";
+
+            /*Setting blur size of shadow in IE*/
+	background:#444;/*Setting shadow's color */
+}
+
+#forgot_pwd_div {
+    -webkit-box-shadow: 0px 2px 9px 3px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 2px 9px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 2px 9px 3px rgba(0, 0, 0, 0.4);
+
+    /* styling of the dialog box, i have a fixed dimension for this demo */
+    width: 510px;
+    position:absolute;
+    background-color: white;
+    /* make sure it has the highest z-index */
+    
+    top:30%;
+    left:50%;
+	margin-left:-300px; /* half of its actual width */
+    padding: 40px 40px 30px 40px;
+
+    z-index: 5000;
+
+}
+
+.browserIE8 #forgot_pwd_div_IE{
+    
+    width: 510px;
+    background-color:#fff;
+
+	position:absolute;
+
+    top:0%;
+    left:47%;
+	margin-left:-300px; /* half of its actual width */
+    padding: 60px 80px 30px 40px;
+    
+    border: 1px solid #CCC;
+    
+    z-index:5000;
+}
+
+.popup_title_blk {
+	margin-top:40px;
+	margin-bottom:20px;
+}
+
+.popup_body_blk {
+	margin-bottom:20px;
+}
+
+.alert_title_blk {
+	display: block;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.alert_body_blk{
+	margin-bottom:25px;
+}
+
+#forgot_pwd_Shadow_IE, #spinner-box_Shadow_IE, #alert_dialog_Shadow_IE{
+	display:none;
+	/*Hiding this layer for non-IE browsers */
+}
+
+.browserIE #forgot_pwd_Shadow_IE{
+	display:block;
+	position:absolute;
+	z-index:2; /*Positioning shadow under content*/
+	top:4px;
+	left:19px;
+	right:-24px;
+	bottom:20px;
+          
+	filter:progid:DXImageTransform.Microsoft.Blur(pixelradius=3);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Blur(pixelradius=3)";
+
+            /*Setting blur size of shadow in IE*/
+	background:#444;/*Setting shadow's color */
+}
+
+.close_img_div_forgot_pwd{
+	margin-top:-32px;
+	margin-right:-32px;
+	float:right;
+}
+
+.browserIE8 .close_img_div_forgot_pwd{ /* new IE*/
+	margin-top:-52px;
+	margin-right:-72px;
+	float:right;
+}
+
+.close_img_div_verification {
+	margin-top:-52px;
+	margin-right:-32px;
+	float:right;
+}
+
+.browserIE8 .close_img_div_verification {
+	margin-top:-32px;
+	margin-right:-32px;
+	float:right;
+}
+
+.close_img_div_alert {
+	margin-top:-22px;
+	margin-right:-18px;
+	float:right;
+}
+
+.browserIE7 .close_img_div_alert {
+	margin-top:0px;
+	margin-right:-18px;
+	float:right;
+}
+
+.browserIE8 .close_img_div_alert {
+	margin-top:-3px;
+	margin-right:-17px;
+	float:right;
+}
+
+#img_close:hover {
+	cursor:pointer;
+}
+
+.hline-text {
+  position: absolute;
+  font-size: 14px;
+  color: #888888;
+  background: #ffffff;
+  right: 50%;
+  padding: 0 4px;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+button, button:hover,
+input.button, input.button:hover,
+a.button, a.button:hover {
+  font-family: inherit;
+  -webkit-user-select: none;  /* Chrome/Safari */
+  -moz-user-select: none;     /* Firefox */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #3ca5ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  padding: 0 20px;
+  margin: 0;
+  min-width: 120px;
+  text-align: center;
+}
+
+button.btn-cancel, button.btn-cancel:hover,
+input.btn-cancel, input.btn-cancel:hover,
+a.btn-cancel, a.btn-cancel:hover {
+  background-color: #90a0b0;
+}
+
+a.btn-google, a.btn-google:hover {
+  font-family: Roboto,arial,sans-serif;
+  font-size: 14px; /* or 12px for small button */
+  height: 44px; /* or 31px for small button */
+  line-height: 44px; /* or 31px for small button */
+  background-color: #dd4b39;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+a.btn-facebook, a.btn-facebook:hover {
+  font-family: Roboto,arial,sans-serif;
+  font-size: 14px; /* or 12px for small button */
+  height: 44px; /* or 31px for small button */
+  line-height: 44px; /* or 31px for small button */
+  background-color: #476197;
+  border: #476197;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+
+button:hover, input.button:hover, a.button:hover {
+  background-color: #1286e9;
+}
+
+button.btn-cancel:hover, input.btn-cancel:hover, a.btn-cancel:hover {
+  background-color: #748494;
+}
+
+a.btn-google:hover {
+  background-color: #e74b37;
+  box-shadow: 0px -2px 0px rgba(0, 0, 0, 0.2) inset;
+}
+
+a.btn-facebook:hover {
+  background-color: #516195;
+  box-shadow: 0px -2px 0px rgba(0, 0, 0, 0.2) inset;
+}
+
+
+.btn-google-left {
+  display: inline-block;
+  vertical-align: top;
+  border-right: 1px solid #bb3f30;
+  background: url("https://ssl.gstatic.com/s2/oz/images/sprites/signinbutton-33609e7d7a37de895f076250a526944d.png") no-repeat scroll 0px 0px transparent; /* or -44px 0px for small button */
+  height: 48px; /* or 32px for small button */
+  width: 43px; /* or 32px for small button */
+  margin-top: 0; /* or -1px for small button */
+}
+
+.btn-google-right {
+  border-radius: 0px 3px 3px 0px;
+  display: inline-block;
+  padding: 0px 25px;
+}
+
+.btn-lenovo-right {
+  border-radius: 0px 3px 3px 0px;
+  display: inline-block;
+  padding: 0px 25px;
+}
+.btn-facebook-left {
+  display: inline-block;
+  vertical-align: top;
+  background: url("https://www.facebook.com/images/fb_icon_325x325.png") no-repeat scroll 0px 0px transparent; /* or -44px 0px for small button */
+  background-size: 48px 48px;
+  height: 48px; /* or 32px for small button */
+  width: 43px; /* or 32px for small button */
+  margin-top: 0; /* or -1px for small button */
+}
+
+.btn-facebook-right {
+  border-radius: 0px 3px 3px 0px;
+  display: inline-block;
+  padding: 0px 17px;
+}
+
+button.disabled-button, input.disabled-button, a.disabled-button,
+button.disabled-button:hover, input.disabled-button:hover, a.disabled-button:hover {
+  background-color: #cccccc;
+}
+
+#signin_err_div {
+  color: #dd0000;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+div.btn-sso-google { margin:48px 0 0 0; }
+div.btn-sso-facebook { margin:12px 0 0 0; }
+
+.body-copy1 {
+	font-size:15px;
+	color: #000;
+	font-weight:lighter;
+	line-height:18px;
+}
+
+.body-copy2 {
+	font-size:15px;
+	color: #000;
+	font-weight:bold;
+}
+
+.body-copy3 {
+	color: #000;
+	font-size:13px;
+	font-weight:lighter;
+}
+
+.body-copy4 {
+	color: #8f8f8f;
+	font-size:13px;
+	font-weight:lighter;
+	line-height:16px;
+}
+
+.links {
+	font-size:15px;
+	color: #0099cc;
+	text-decoration:none;
+	font-weight:lighter;
+
+	cursor:pointer;
+}
+
+.links-small {
+	font-size:13px;
+	color: #0099cc;
+	text-decoration:none;
+	font-weight:lighter;
+
+	cursor:pointer;
+}
+
+.links-small_signup{
+	font-family: 'Open Sans', Arial, serif;
+	font-size:14px;
+	color: #3399FF;
+	text-decoration:none;
+	font-weight:bold;
+	display:inline-block;
+	cursor:pointer;
+	margin-left:5px;
+	margin-top:10px;
+	
+}
+
+.header2 {
+  font-size: 21px;
+  font-weight: normal;
+}
+
+.err-messaging {
+  font-size: 13px;
+  color: #ff0000;
+  font-weight: lighter;
+}
+
+label {
+  clear: left;
+  display: inline;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: right;
+}
+
+#lbl_title1, #lbl_title2 {
+  margin-bottom: 20px;
+}
+
+#forgot_dialog_motoid {
+  width: 278px;
+}
+
+#forgot_pwd_sub_div {
+  margin-top: 8px;
+}
+
+#lbl_title3 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#button_cancel_reset, #button_reset_pwd, #button_cea_save, #button_cea_cancel {
+  float: right;
+  margin-left: 10px;
+}
+
+#button_vr_ok, #alert_ok {
+  float: right;
+}
+
+.moto_header_title {
+  color: #a0a0a0 !important;
+  padding-left: 7px !important;
+}
+
+ul.footerLinkList li a.moto_footer_copyright:hover {
+  color: #808080 !important;
+}
+
+.footer-bug {
+  width: 66px !important;
+  text-align: center !important;
+  padding: 0 25px 0 5px !important;
+  margin-right: 8px !important;
+}
+
+ul.footerLinkList li {
+  margin-right: 30px !important;
+}
+
+.lead_note {
+  font-size: 16px;
+  margin-left: 6px;
+  color: #a0afb0;
+  line-height: 21px;
+}
+
+/**
+* added sign in block UI changes
+*/
+
+#lbl_title4{
+	padding-bottom: 10px;
+}
+
+.body-copy5 {
+	font-family: 'Open Sans', Arial, serif;
+	color: #215a6d;
+	font-size:15px;
+	font-weight:normal;
+	line-height:16px;
+}
+
+.body-copy7 {
+	display:inline-block;
+	font-family: 'Open Sans', Arial, serif;
+	color: black;
+	font-size:14px;
+	font-weight:normal;
+}
+
+.body-copy6 {
+	display:inline;
+	float: left;
+	font-family: 'Open Sans', Arial, serif;
+	color: #215a6d;
+	font-size:15px;
+	font-weight:normal;
+	line-height:16px;
+	margin-right:40px;
+}
